@@ -1,4 +1,4 @@
--- Basic:
+
 -- Retrieve the total number of orders placed.
 
  select count(*) AS total_number from orders;
@@ -52,7 +52,7 @@ limit 5;
 
 
 
--- Intermediate:
+
 -- Join the necessary tables to find the total quantity of each pizza category ordered.
 
 select pizza_types.category,sum(order_details.quantity) AS total_quantity
